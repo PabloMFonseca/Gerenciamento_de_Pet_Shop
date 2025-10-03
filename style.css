@@ -1,0 +1,124 @@
+
+body {
+  font-family: 'Segoe UI', 'Poppins', Arial, sans-serif;
+  background-color: #FFFFFF;
+  color: #333333;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background-image: linear-gradient(135deg, #FFFFFF 60%, #E8F5E9 100%);
+}
+
+.container {
+  width: 90%;
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 32px 28px 28px 28px;
+  background-color: #FFFFFF;
+  border: 1.5px solid #4CAF50;
+  border-radius: 18px;
+  box-shadow: 0px 6px 24px rgba(76,175,80,0.10), 0px 1.5px 4px rgba(51,51,51,0.08);
+  transition: box-shadow 0.3s;
+}
+
+.container:hover {
+  box-shadow: 0px 10px 32px rgba(76,175,80,0.18), 0px 2px 8px rgba(51,51,51,0.10);
+}
+
+h1 {
+  text-align: center;
+  color: #4CAF50;
+  margin-bottom: 20px;
+  font-size: 2.2rem;
+  letter-spacing: 1px;
+  font-weight: 700;
+  text-shadow: 0 2px 8px #E8F5E9;
+}
+
+form label {
+  display: block;
+  margin-top: 14px;
+  font-weight: 600;
+  color: #333333;
+  letter-spacing: 0.5px;
+}
+
+form input,
+form textarea,
+form select {
+  width: 100%;
+  padding: 10px 12px;
+  margin-top: 7px;
+  border: 1.5px solid #4CAF50;
+  border-radius: 8px;
+  font-size: 15px;
+  background: #F8F8F8;
+  color: #333333;
+  transition: border 0.2s, box-shadow 0.2s;
+  outline: none;
+  box-sizing: border-box;
+}
+
+form input:focus,
+form textarea:focus,
+form select:focus {
+  border: 2px solid #4CAF50;
+  box-shadow: 0 0 0 2px #E8F5E9;
+}
+
+form button {
+  display: block;
+  width: 100%;
+  padding: 14px;
+  margin-top: 24px;
+  background: linear-gradient(90deg, #4CAF50 80%, #43A047 100%);
+  color: #FFFFFF;
+  font-size: 17px;
+  font-weight: 700;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 2px 8px #E8F5E9;
+  letter-spacing: 1px;
+  transition: background 0.3s, box-shadow 0.3s;
+}
+
+form button:hover {
+  background: linear-gradient(90deg, #43A047 80%, #388E3C 100%);
+  box-shadow: 0 4px 16px #C8E6C9;
+}
+
+.success-message {
+  margin-top: 18px;
+  padding: 12px;
+  background-color: #E8F5E9;
+  color: #2E7D32;
+  border: 1.5px solid #4CAF50;
+  border-radius: 8px;
+  display: none;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.05rem;
+  box-shadow: 0 1px 6px #C8E6C9;
+}
+
+/* Detalhes extras para inputs e botões */
+form input[type="checkbox"],
+form input[type="radio"] {
+  width: auto;
+  margin-right: 8px;
+  accent-color: #4CAF50;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  background: #E8F5E9;
+}
+::-webkit-scrollbar-thumb {
+  background: #4CAF50;
+  border-radius: 8px;
+}
