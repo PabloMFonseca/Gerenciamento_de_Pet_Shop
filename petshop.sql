@@ -1,4 +1,3 @@
--- Criação do banco de dados
 CREATE DATABASE pet_shop_db;
 USE pet_shop_db;
 
